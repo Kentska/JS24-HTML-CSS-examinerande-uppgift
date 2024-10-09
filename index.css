@@ -5,14 +5,16 @@
 }
 body{
 	background-color: #fcf5fc;
-	width:100vw;
-	width: 100%;
-	font-family: 'Lato','Open Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	min-width:100vw;
+	/* width: 100%; */
+	min-height: 100vh;
+	height:100%;
+	font-family: 'Maven Pro', 'Lato','Open Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 	display:grid;
-	justify-content: center;
+	justify-content:center;
 	align-items: center;
-	grid-template-columns: 600px 600px;
-	grid-template-rows: 500px 60px 1fr 1fr 1fr 1fr;
+	grid-template-columns:1fr 1fr;
+	grid-template-rows: 500px 60px 1fr 644px;
 	grid-template-areas:
 	"header"
 	"nav"
@@ -23,33 +25,250 @@ body{
 
 }
 
-
+/* Header börjar här*/
 .header{
-	background-color: rgb(43, 255, 0);
+	/* background-color: rgb(43, 255, 0); */
 	grid-area: header;
 	width:1000px;
 	height:500px;
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-template-areas:
+	"h1 h2"
+	"h1 h3";
 }
-.header__img{
+
+
+.card1__img{
 	height:500px;
 	width: 500px;
 }
 
+.card1__icon{
+	height:186px;
+	width:190px;
+	position: absolute;
+ 	margin-top: 190px;
+
+}
+.card1__icon2{
+	height:195px;
+	width:176px;
+}
+
+.card1:nth-child(1){
+	grid-area:h1;
+	display:flex;
+	flex-direction: column;
+	justify-content: stretch;
+	align-items:center;
+
+}
+
+.card1:nth-child(2){
+	grid-area:h2;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:250px;
+	width:500px;
+	background-color: #9E6D52;
+}
+
+.card1:nth-child(3){
+	grid-area:h3;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	height:250px;
+	width: 500px;
+	background-color: #0A846E;
+}
+/* Header slutar här*/
+
+/* Nav börjar här*/
 .nav{
-	background-color: aquamarine;
+	background-color: #ffffff;
 	grid-area: nav;
 	width:1000px;
 	height:60px;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+.nav__list{
+	width:792px;
+	height:17px;
+	display:flex;
+	justify-content: space-between;
+	align-items: center;
+	
 }
 
+.nav__item{
+	font-family: 'Maven Pro';
+	font-size: 20px;
+	font-weight: 500;
+	color:#055647;
+}
+/* Nav slutar här*/
+
+/* aside börjar här*/
 .aside{
-	background-color: blue;
+	background-color: #ffffff;
 	grid-area: aside;
 	width:1000px;
+	height:700px;
+	height:100%;
+
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"a1"
+	"a2"
+	"a3";
+}
+
+.card2:nth-child(1){
+	grid-area:a1;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+}
+.card2__text{
+	grid-area:a1;
+	width:573px;
+	height:29px;
+	font-family: 'Maven Pro';
+	font-size: 48px;
+	color: #0A846E;
+	font-weight: 500;
+	margin-top:79px; 
+	margin-left:90px;
+	
+}
+
+.card2:nth-child(2){
+	grid-area:a2;
+	height:377px;
+	width:911px;
+	margin-top:81px;
+	margin-left:44px;
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+	"ac1 ac2"
+	"ac1 ac3"
+	"ac1 ac4";
+
+	
+	
 
 }
+
+
+.card2__p{
+	grid-area:ac2;
+	width:236px;
+	height:44px;
+	margin-top: 80px;
+	margin-left:70px;
+	font-family: 'Open Sans';
+	font-size: 32px;
+	font-weight: 700;
+	color:#1E1E1E
+	
+}
+
+.card2__p1{
+	grid-area:ac3;
+	width:467px;
+	height:71px;
+	margin-left:70px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 400px;
+	color:#000000;
+}
+
+.card2__btn{
+	grid-area:ac4;
+	width:179px;
+	height:63px;
+	border-radius: 10px;
+	background-color:#0A846E ;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	font-weight: 700;
+	color:#ffffff;
+	margin-left:400px;
+	
+	
+	
+}
+
+.card2__figur{
+	grid-area: ac1;
+	height:377px;
+	width:377px;
+	background-color: #0A846E;
+	border-radius: 999px;
+	
+}
+.card2__icon{
+	position:absolute;
+	margin-left: 100px;
+	margin-top:80px;
+
+}
+
+
+
+.card2:nth-child(3){
+	grid-area:a3;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	
+	
+
+
+}
+.card2__divider{
+	grid-area: a3;
+	width:333px;
+	height:5px;
+	border:3px;
+	margin-top: 93px;
+	border-color: black;
+	background-color: #055647;
+}
+
+	
+.card2__p2{
+	grid-area: a3;
+	width:489px;
+	height:38px;
+	margin-top:69px;
+	font-family: 'Lato';
+	font-size: 32px;
+	font-weight: 600;
+	color:#000000;
+	
+
+}
+/* Här slutar aside*/
+
+
+	/* Här börjar main*/
 .main{
-	/* background-color: chocolate; */
 	grid-area: main;
 	width:1000px;
 	height:700px;
@@ -58,14 +277,14 @@ body{
 
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 	"c1 c2 c3"
 	"c4 c5 c6";
 }
 
 .card{
-	background-color: white;
+	background-color: #ffffff;
 	width:300px;
 	height:407px;
 }
@@ -232,21 +451,280 @@ body{
 	height:19px;
 	margin-left: 10px;
 	
+}
+/* Här slutar main */
+
+
+/* Här börjar sidebar*/
+
+
+
+.sidebar{
+	background-color: #ffffff;
+	grid-area: sidebar;
+	width:1000px;
+	display:grid;
+	grid-template-columns:1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"s1"
+	"s3 s2";
+}
+
+.card3:nth-child(1){
+	grid-area: s1;
+	display:flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items:flex-start;
+
+}
+.card3__btn--1{
+	grid-area: s1;
+	height:63px;
+	width:157px;
+	margin-right: 450px;
+	margin-top:20px;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	font-weight: 600px;
+	background-color:#0A846E;
+	border-radius: 8px;
+	color:#ffffff;
+	
+
+}
+
+.card3:nth-child(2){
+	grid-area:s2;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.card3__figur{
+	grid-area: s2;
+	height:377px;
+	width:377px;
+	margin-top: 34px;
+	border-radius: 999px;
+	background-color: #0A846E;
+	
+}
+.card3__icon{
+	position: absolute;
+}
+
+.card3:nth-child(3){
+	grid-area:s3;
+
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	"s31"
+	"s32"
+	"s33";
+}
+
+.card3__p:nth-child(1){
+	grid-area:s31;
+	width:470px;
+	height:44px;
+	font-family: 'Open Sans';
+	font-size: 32px;
+	font-weight: 700;
+	color:#1E1E1E;
+
+}
+.card3__p1:nth-child(2){
+	grid-area: s32;
+	width:467px;
+	height:71px;
+	color:#000000
+}
+
+.card3__btn--2:nth-child(3){
+	width:219px;
+	height:33px;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	background-color: #0A846E;
+	color:#ffffff;
+	border-radius: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card2:nth-child(1){
+	grid-area:a1;
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+	align-items: center;
+}
+
+
+.card2__text{
+	grid-area:a1;
+	width:573px;
+	height:29px;
+	font-family: 'Maven Pro';
+	font-size: 48px;
+	color: #0A846E;
+	font-weight: 500;
+	margin-top:79px; 
+	margin-left:90px;
+	
+}
+
+.card2:nth-child(2){
+	grid-area:a2;
+	height:377px;
+	width:911px;
+	margin-top:81px;
+	margin-left:44px;
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	grid-template-areas:
+	"ac1 ac2"
+	"ac1 ac3"
+	"ac1 ac4";
+
+	
 	
 
 }
 
 
-
-
-
-
-
-.sidebar{
-	background-color: dodgerblue;
-	grid-area: sidebar;
-	width:1000px;
+.card2__p{
+	grid-area:ac2;
+	width:236px;
+	height:44px;
+	margin-top: 80px;
+	margin-left:70px;
+	font-family: 'Open Sans';
+	font-size: 32px;
+	font-weight: 700;
+	color:#1E1E1E
+	
 }
+
+.card2__p1{
+	grid-area:ac3;
+	width:467px;
+	height:71px;
+	margin-left:70px;
+	font-family: 'Open Sans';
+	font-size: 16px;
+	font-weight: 400px;
+	color:#000000;
+}
+
+.card2__btn{
+	grid-area:ac4;
+	width:179px;
+	height:63px;
+	border-radius: 10px;
+	background-color:#0A846E ;
+	font-family: 'Open Sans';
+	font-size: 24px;
+	font-weight: 700;
+	color:#ffffff;
+	margin-left:400px;
+	
+	
+	
+}
+
+.card2__figur{
+	grid-area: ac1;
+	height:377px;
+	width:377px;
+	background-color: #0A846E;
+	border-radius: 999px;
+	
+}
+.card2__icon{
+	position:absolute;
+	margin-left: 100px;
+	margin-top:80px;
+
+}
+
+
+
+.card2:nth-child(3){
+	grid-area:a3;
+	display:flex;
+	flex-direction: column;
+	justify-content:center;
+	align-items:center;
+	
+	
+
+
+}
+.card2__divider{
+	grid-area: a3;
+	width:333px;
+	height:5px;
+	border:3px;
+	margin-top: 93px;
+	border-color: black;
+	background-color: #055647;
+}
+
+	
+.card2__p2{
+	grid-area: a3;
+	width:489px;
+	height:38px;
+	margin-top:69px;
+	font-family: 'Lato';
+	font-size: 32px;
+	font-weight: 600;
+	color:#000000;
+	
+
+}
+/* Här slutar aside*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .footer{
 	background-color: greenyellow;

@@ -2,7 +2,9 @@
 	box-sizing: border-box;
 	padding:0;
 	margin:0;
+
 }
+
 body{
 	background-color: #fcf5fc;
 	min-width:100vw;
@@ -17,16 +19,15 @@ body{
 	grid-template-areas:
 	"header"
 	"nav"
-	"aside"
+	"article"
 	"main"
-	"sidebar"
+	"section"
 	"footer";
 
 }
 
 /* Header börjar här*/
 .header{
-	/* background-color: rgb(43, 255, 0); */
 	grid-area: header;
 	width:1000px;
 	height:500px;
@@ -36,12 +37,13 @@ body{
 	grid-template-areas:
 	"h1 h2"
 	"h1 h3";
-}
 
+}
 
 .card1__img{
 	height:500px;
 	width: 500px;
+
 }
 
 .card1__icon{
@@ -51,9 +53,11 @@ body{
  	margin-top: 190px;
 
 }
+
 .card1__icon2{
 	height:195px;
 	width:176px;
+
 }
 
 .card1:nth-child(1){
@@ -73,6 +77,7 @@ body{
 	height:250px;
 	width:500px;
 	background-color: #9E6D52;
+
 }
 
 .card1:nth-child(3){
@@ -83,6 +88,7 @@ body{
 	height:250px;
 	width: 500px;
 	background-color: #0A846E;
+
 }
 /* Header slutar här*/
 
@@ -96,7 +102,9 @@ body{
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+
 }
+
 .nav__list{
 	width:792px;
 	height:17px;
@@ -111,17 +119,17 @@ body{
 	font-size: 20px;
 	font-weight: 500;
 	color:#055647;
+
 }
 /* Nav slutar här*/
 
-/* aside börjar här*/
-.aside{
+/* article börjar här*/
+.article{
 	background-color: #ffffff;
-	grid-area: aside;
+	grid-area: article;
 	width:1000px;
 	height:700px;
 	height:100%;
-
 	display:grid;
 	grid-template-columns:1fr;
 	grid-template-rows: 1fr;
@@ -129,6 +137,7 @@ body{
 	"a1"
 	"a2"
 	"a3";
+
 }
 
 .card2:nth-child(1){
@@ -137,7 +146,9 @@ body{
 	flex-direction: row;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card2__text{
 	grid-area:a1;
 	width:573px;
@@ -158,7 +169,6 @@ body{
 	margin-top:81px;
 	margin-left:44px;
 	display: grid;
-	
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr 1fr;
 	grid-template-areas:
@@ -166,11 +176,7 @@ body{
 	"ac1 ac3"
 	"ac1 ac4";
 
-	
-	
-
 }
-
 
 .card2__p{
 	grid-area:ac2;
@@ -194,6 +200,7 @@ body{
 	font-size: 16px;
 	font-weight: 400px;
 	color:#000000;
+
 }
 
 .card2__btn{
@@ -208,8 +215,6 @@ body{
 	color:#ffffff;
 	margin-left:350px;
 	
-	
-	
 }
 
 .card2__figur{
@@ -220,14 +225,13 @@ body{
 	border-radius: 999px;
 	
 }
+
 .card2__icon{
 	position:absolute;
 	margin-left: 100px;
 	margin-top:80px;
 
 }
-
-
 
 .card2:nth-child(3){
 	grid-area:a3;
@@ -236,10 +240,8 @@ body{
 	justify-content:center;
 	align-items:center;
 	
-	
-
-
 }
+
 .card2__divider{
 	grid-area: a3;
 	width:333px;
@@ -248,8 +250,8 @@ body{
 	margin-top: 93px;
 	border-color: black;
 	background-color: #055647;
-}
 
+}
 	
 .card2__p2{
 	grid-area: a3;
@@ -262,9 +264,8 @@ body{
 	color:#000000;
 	margin-left:80px;
 	
-
 }
-/* Här slutar aside*/
+/* Här slutar article*/
 
 
 	/* Här börjar main*/
@@ -275,21 +276,21 @@ body{
 	min-height:700px;
 	row-gap: 15px;
 	column-gap: 5px;
-
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	grid-template-areas:
 	"c1 c2 c3"
 	"c4 c5 c6";
+
 }
 
 .card{
 	background-color: #ffffff;
 	width:300px;
 	height:407px;
-}
 
+}
 
 .card:nth-child(1) {
 	grid-area: c1;
@@ -297,7 +298,9 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c1;
 	height: 111px;
@@ -308,6 +311,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	box-shadow: 4px 4px #ebe8e9;
+
 }
 
 .card:nth-child(2) {
@@ -316,7 +320,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{ 
 	grid-area:c2;
 	height: 111px;
@@ -335,7 +341,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c3;
 	height: 111px;
@@ -345,6 +353,7 @@ body{
 	grid-template-rows: 1fr 1fr;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .card:nth-child(4) {
@@ -353,7 +362,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c4;
 	height: 111px;
@@ -363,6 +374,7 @@ body{
 	grid-template-rows: 1fr 1fr;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .card:nth-child(5) {
@@ -371,7 +383,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c5;
 	height: 111px;
@@ -381,6 +395,7 @@ body{
 	grid-template-rows: 1fr 1fr;
 	justify-content: center;
 	align-items: center;
+
 }
 
 .card:nth-child(6) {
@@ -390,6 +405,7 @@ body{
 	justify-content:center;
 	align-items: center;
 }
+
 .card--text{
 	grid-area:c6;
 	height: 111px;
@@ -415,6 +431,7 @@ body{
 	padding-bottom: 100px; 
 
 }
+
 .card__btn{
 	width:97px;
 	height: 30px;
@@ -433,8 +450,7 @@ body{
 	font-weight: 600;
 	height:25px;
 	margin-left:10px
-	
-	
+		
 }
 
 .card__p1{
@@ -445,6 +461,7 @@ body{
 	margin-left:30px;
 	
 }
+
 .card__p2{
 	font-family: 'Lato';
 	font-size: 16px;
@@ -456,21 +473,21 @@ body{
 /* Här slutar main */
 
 
-/* Här börjar sidebar*/
+/* Här börjar section*/
 
-.sidebar{
+.section{
 	background-color: #ffffff;
-	grid-area: sidebar;
+	grid-area: section;
 	width:1000px;
 	height:700px;
 	height:100%;
-
 	display:grid;
 	grid-template-columns:1fr;
 	grid-template-rows: 100px 1fr;
 	grid-template-areas:
 	"s1"
 	"s2";
+
 }
 
 .card3:nth-child(1){
@@ -479,9 +496,10 @@ body{
 	flex-direction: column;
 	justify-content:flex-end;
 	align-items: center;
-}
-.card3__btn1{
 
+}
+
+.card3__btn1{
 	height:63px;
 	width:157px;
 	font: 'Open Sans';
@@ -491,8 +509,8 @@ body{
 	border-radius: 8px;
 	color:#ffffff;
 	
-	
 }
+
 .card3:nth-child(2){
 	grid-area:s2;
 	display: grid;
@@ -501,9 +519,7 @@ body{
 	grid-template-areas:
 	"sc1";
 
-
 }
-
 
 .card3__figur{
 	grid-area:sc1;
@@ -514,7 +530,6 @@ body{
 	background-color: #0A846E;
 	margin-left:590px;
 	margin-top:150px;
-
 
 }	
 
@@ -536,9 +551,8 @@ body{
 	margin-top: 200px;
 	margin-left:10px;
 	
-	
-
 }
+
 .card3__p1{
 	grid-area: sc1;
 	width:467px;
@@ -562,6 +576,7 @@ body{
 	margin-left:10px;
 		
 }
+/* Här slutar section*/
 
 
 /* Här börjar footer*/
@@ -577,14 +592,12 @@ body{
 	"f1"
 	"f2";
 	
-	
-
 }
 
 .card4__img, .card4__img2, .card4__icon, .card4__p, .card4__p1, .card4__p2, .card4__telephone, .card4__envelope{
 	grid-area: overlap;
-}
 
+}
 
 .card4:nth-child(1){
 	grid-area: f1;
@@ -598,13 +611,13 @@ body{
 	
 }
 
-
 .card4__img{
 	z-index: 1;
 	height:590px;
 	width:1000px;
 
 }
+
 .card4__icon{
 	z-index: 2;
 	width:189px;
@@ -613,7 +626,9 @@ body{
 	align-self: center;
 	margin-right:150px;
 	margin-top:40px;
+
 }
+
 .card4__img2{
 	z-index: 3;
 	background-color: #000000;
@@ -623,7 +638,6 @@ body{
 	justify-self:start;
 
 }
-
 
 .card4__p{ /* vi hörs*/
 	z-index: 4;
@@ -647,6 +661,7 @@ body{
 	margin-right:750px;
 
 }	
+
 .card4__p2{ /* text mail*/
 	z-index: 4;
     font-family: 'Open Sans';
@@ -655,23 +670,29 @@ body{
 	color: #ffffff;
 	margin-top:500px;
 	margin-right:240px;
+
 }
+
 .card4__telephone{
 	z-index: 4;
 	margin-right:924px;
 	margin-top:500px;
+
 }
+
 .card4__envelope{
 	z-index: 4;
 	margin-right:75Px;
 	margin-top:500px;
+
 }
 
-.card4:nth-child(2) {
+.card4:nth-child(2){
     grid-area: f2;
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .card4__link{
@@ -684,16 +705,19 @@ body{
 
 }
 
+/* Här slutar footer */
+
 @media screen and (max-width:800px){
 	*{
 	box-sizing: border-box;
 	padding:0;
 	margin:0;
+
 }
+
 body{
 	background-color: #fcf5fc;
 	max-width:390px;
-	
 	min-height: 100vh;
 	height:100%;
 	font-family: 'Maven Pro', 'Lato','Open Sans','Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -704,13 +728,12 @@ body{
 	grid-template-rows: 500px  1fr 1fr 1fr 644px;
 	grid-template-areas:
 	"header"
-	"aside"
+	"article"
 	"main"
-	"sidebar"
+	"section"
 	"footer";
 
 }
-
 
 /* Header börjar här*/
 .header{
@@ -726,10 +749,10 @@ body{
 	
 }
 
-
 .card1__img{
 	height:390px;
 	width: 390px;
+
 }
 
 .card1__icon{
@@ -739,10 +762,12 @@ body{
  	margin-top: 130px;
 
 }
+
 .card1__icon2{
 	height:130px;
 	width:97px;
 	margin-bottom:40px;
+
 }
 
 .card1:nth-child(1){
@@ -775,22 +800,24 @@ body{
 	background-color: #0A846E;
 	margin-left:195px;
 	
-
 }
 /* Header slutar här*/
+
+/* Nav börjar här */
 .nav{
 	display:none;
 }
 /* Nav slutar här*/
 
+/* Article börjar här */
 
-.aside{
+
+.article{
 	background-color: #ffffff;
-	grid-area: aside;
+	grid-area: article;
 	width:390px;
 	height:700px;
 	height:100%;
-
 	display:grid;
 	grid-template-columns:1fr;
 	grid-template-rows: 1fr;
@@ -798,6 +825,7 @@ body{
 	"a1"
 	"a2"
 	"a3";
+
 }
 
 .card2:nth-child(1){
@@ -806,7 +834,9 @@ body{
 	flex-direction: row;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card2__text{
 	grid-area:a1;
 	width:358px;
@@ -817,14 +847,11 @@ body{
 	font-weight: 500;
 	margin-top: 20px;
 	margin-right:800px;
-	
-	
-	
+		
 }
 
 .card2:nth-child(2){
 	grid-area:a2;
-	
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -834,11 +861,7 @@ body{
 	"ac3" 
 	"ac4";
 
-	
-	
-
 }
-
 
 .card2__p{
 	grid-area:ac1;
@@ -850,8 +873,7 @@ body{
 	color:#1E1E1E;
 	margin-left:95px;
 	margin-top:30px;
-	
-	
+		
 }
 
 .card2__p1{
@@ -864,6 +886,7 @@ body{
 	color:#000000;
 	margin-top:10px;
 	margin-left:-25px;
+
 }
 
 .card2__btn{
@@ -878,12 +901,7 @@ body{
 	color:#ffffff;
 	margin-top:-60px;
 	margin-left:95px;
-	
-
-
-	
-	
-	
+		
 }
 
 .card2__figur{
@@ -893,10 +911,9 @@ body{
 	background-color: #0A846E;
 	border-radius: 100%;
 	margin-left:25px;
-	
-
-	
+		
 }
+
 .card2__icon{
 	position:absolute;
 	width:126px;
@@ -904,10 +921,7 @@ body{
 	margin-top:230px;
 	margin-left:95px;
 	
-
 }
-
-
 
 .card2:nth-child(3){
 	grid-area:a3;
@@ -916,10 +930,8 @@ body{
 	justify-content:center;
 	align-items:center;
 	
-	
-
-
 }
+
 .card2__divider{
 	grid-area: a3;
 	width:202px;
@@ -932,7 +944,6 @@ body{
 	
 }
 
-	
 .card2__p2{
 	grid-area: a3;
 	width:355px;
@@ -944,10 +955,8 @@ body{
 	align-self: flex-start;
 	margin-bottom:20px;
 
-	
-
 }
-/* Här slutar aside*/
+/* Här slutar article*/
 
 	/* Här börjar main*/
 .main{
@@ -957,7 +966,6 @@ body{
 	height:100%;
 	row-gap: 10px;
 	column-gap: 10px;
-
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -965,14 +973,15 @@ body{
 	"c1 c2"
 	"c3 c4"
 	"c5 c6";
+
 }
 
 .card{
 	background-color: #ffffff;
 	width:175px;
 	height:220px;
-}
 
+}
 
 .card:nth-child(1) {
 	grid-area: c1;
@@ -980,7 +989,9 @@ body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c1;
 	height: 60px;
@@ -991,6 +1002,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	box-shadow: 4px 4px #ebe8e9;
+
 }
 
 .card:nth-child(2) {
@@ -999,7 +1011,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{ 
 	grid-area:c2;
 	height: 60px;
@@ -1019,7 +1033,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c3;
 	height: 60px;
@@ -1030,6 +1046,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	box-shadow: 4px 4px #ebe8e9;
+
 }
 
 .card:nth-child(4) {
@@ -1038,7 +1055,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c4;
 	height: 60px;
@@ -1049,6 +1068,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	box-shadow: 4px 4px #ebe8e9;
+
 }
 
 .card:nth-child(5) {
@@ -1057,7 +1077,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c5;
 	height: 60px;
@@ -1068,6 +1090,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	box-shadow: 4px 4px #ebe8e9;
+
 }
 
 .card:nth-child(6) {
@@ -1076,7 +1099,9 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+
 }
+
 .card--text{
 	grid-area:c6;
 	height: 60px;
@@ -1102,7 +1127,6 @@ body{
 }
 
 .card__btn{
-	
 	width:13px;
 	height: 16px;
 	background-color: #B93857;
@@ -1118,7 +1142,6 @@ body{
 	width:62Px;
 	margin-left:10px
 	
-	
 }
 
 .card__p1{
@@ -1130,6 +1153,7 @@ body{
 	margin-left:30px;
 	
 }
+
 .card__p2{
 	font-family: 'Lato';
 	font-size: 10px;
@@ -1141,18 +1165,18 @@ body{
 }
 /* Här slutar main */
 
-.sidebar{
+.section{
 	background-color: #ffffff;
-	grid-area: sidebar;
+	grid-area: section;
 	width:390px;
 	height:100%;
-
 	display:grid;
 	grid-template-columns:1fr;
 	grid-template-rows: 100px 1fr;
 	grid-template-areas:
 	"s1"
 	"s2";
+
 }
 
 .card3:nth-child(1){
@@ -1161,9 +1185,10 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
-}
-.card3__btn1{
 
+}
+
+.card3__btn1{
 	height:18px;
 	width:96px;
 	font: 'Open Sans';
@@ -1173,9 +1198,9 @@ body{
 	border-radius: 8px;
 	color:#ffffff;
 	margin-right:90px;
-	
-	
+		
 }
+
 .card3:nth-child(2){
 	grid-area:s2;
 	display: grid;
@@ -1184,9 +1209,7 @@ body{
 	grid-template-areas:
 	"sc1";
 
-
 }
-
 
 .card3__figur{
 	grid-area:sc1;
@@ -1198,8 +1221,6 @@ body{
 	margin-left:65px;
 	margin-top:20px;
 	
-
-
 }	
 
 .card3__icon{
@@ -1209,9 +1230,6 @@ body{
 	margin-inline:140px;
 	margin-top: 80px;
 
-
-	
-	
 }
 
 .card3__p{
@@ -1224,11 +1242,9 @@ body{
 	color:#1E1E1E;
 	margin-top:350px;
 	margin-left:95px;
-	
-	
-	
 
 }
+
 .card3__p1{
 	grid-area: sc1;
 	width:363px;
@@ -1238,7 +1254,6 @@ body{
 	font-weight: 400;
 	color:#000000;
 	margin-top:400px;
-	
 	
 }
 
@@ -1253,8 +1268,7 @@ body{
 	border-radius: 9px;
 	margin-top:500px;
 	margin-left:95px;
-	
-		
+			
 }
 
 /* Här börjar footer*/
@@ -1269,15 +1283,13 @@ body{
 	grid-template-areas:
 	"f1"
 	"f2";
-	
-	
 
 }
 
 .card4__img, .card4__img2, .card4__icon, .card4__p, .card4__p1, .card4__p2, .card4__telephone, .card4__envelope{
 	grid-area: overlap;
-}
 
+}
 
 .card4:nth-child(1){
 	grid-area: f1;
@@ -1290,13 +1302,13 @@ body{
 	
 }
 
-
 .card4__img{
 	z-index: 1;
 	height:774px;
 	width:390px;
 
 }
+
 .card4__icon{
 	z-index: 2;
 	width:189px;
@@ -1305,8 +1317,8 @@ body{
 	margin-right:670px;
 	margin-bottom:480px;
 	
-	
 }
+
 .card4__img2{
 	z-index: 3;
 	background-color: #000000;
@@ -1316,7 +1328,6 @@ body{
 	margin-bottom:-370px;
 
 }
-
 
 .card4__p{ /* vi hörs*/
 	z-index: 4;
@@ -1340,7 +1351,8 @@ body{
 	margin-top:700px;
 	margin-left:35px;
 
-}	
+}
+
 .card4__p2{ /* text mail*/
 	z-index: 4;
     font-family: 'Open Sans';
@@ -1349,13 +1361,17 @@ body{
 	color: #ffffff;
 	margin-top:700px;
 	margin-left:255px;
+
 }
+
 .card4__telephone{
 	z-index: 4;
 	width:19px;
 	margin-top:700px;
 	margin-left:10px;
+
 }
+
 .card4__envelope{
 	z-index: 4;
 	width:22px;
@@ -1370,6 +1386,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 .card4__link{
@@ -1381,15 +1398,4 @@ body{
 	color:#000000;
 
 }
-
-
-
-
-
-
-
-
-
-
-
 }

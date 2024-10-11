@@ -15,18 +15,168 @@ body{
 	grid-template-columns:1fr;
 	grid-template-rows: 1fr;
 	grid-template-areas:
-	"aside nav"
-	"aside header"
-	"aside main"
-	"aside footer";
+	"nav"
+	"header"
+	"article"
+	"main"
+	"footer";
 
 }
-.card__img{
-	height:296px;
-	width:293px;
+/* Start nav */
+.nav{
+	grid-area:nav;
+	width:1000px;
+	height:60px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.nav__list{
+	width:792px;
+	height:17px;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+}
+
+.nav__item{
+	font-family: 'Maven Pro';
+	font-size: 20px;
+	font-weight: 500;
+	color:#055647;
+
+}
+/* Slut nav */
+
+/* Start header */
+
+.header{
+	grid-area: header;
+	width:1000px;
+	height:379px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.card1__img{
+	width:1000px;
+	height:379px;
+
+}
+
+.card1__icon{
+	height:186px;
+	width:189px;
+	position: absolute;
+	margin-bottom: 130px;
+
+}
+
+.card1__p{
+	width:192px;
+	height:47px;
+	position: absolute;
+	font:'Maven Pro';
+	font-size: 40px;
+	font-weight: 500;
+	color:#ffffff;
+	margin-top:170px;
+
+}
+
+/* Slut header */
+
+/* Start article */
+
+.article{
+	grid-area:article;
+	background-color: #ffffff;
+	width:1000px;
+	height:232px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.card2{
+	width:927px;
+	height:232px;
+	background-color: #ffffff;
+	display:flex;
+	justify-content: center;
+	align-items: center;
 	
 }
-.aside{
-	width:30px;
-	height:1000px;
+.card2__p{
+	width:327px;
+	height:44px;
+	font:'Open Sans';
+	font-size: 32px;
+	font-weight: 400;
+	color: #060606;
+}
+
+.card2__form--text{
+	width:442px;
+	height:72px;
+	box-sizing: border-box;
+	
+	
+}
+.card2__form--datum{
+	width:442px;
+	height:72px;
+}
+
+.card2__text--text{
+	width:86px;
+	height:27px;
+	font:'Open Sans';
+	font-size: 20px;
+	font-weight: 400;
+
+
+}
+input{
+	width:442px;
+	height:45px;
+	box-shadow: 0 4 #000000;
+	opacity:25%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.card__img{
+	width: 300px;
+	height:300px;
 }

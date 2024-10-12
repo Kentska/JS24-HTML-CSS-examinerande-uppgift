@@ -362,6 +362,7 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+	margin-bottom:40px;
 
 }
 
@@ -754,6 +755,13 @@ body{
 	width: 390px;
 
 }
+.card1__icon--burgir{
+	height:30px;
+	width:40px;
+	position: absolute;
+	margin-top:50px;
+	margin-left:340px;
+}
 
 .card1__icon{
 	height:186px;
@@ -1099,6 +1107,7 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+	margin-bottom: 40px;;
 
 }
 

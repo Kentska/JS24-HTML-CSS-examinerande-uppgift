@@ -273,9 +273,9 @@ body{
 	grid-area: main;
 	background-color: #ffffff;
 	width:1000px;
-	min-height:700px;
-	row-gap: 15px;
-	column-gap: 5px;
+	height:100%;
+	row-gap: 10px;
+	column-gap: 10px;
 	display:grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -362,7 +362,7 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
-	margin-bottom:40px;
+	
 
 }
 
@@ -405,6 +405,7 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
+	margin-bottom:20px;
 }
 
 .card--text{
@@ -442,6 +443,7 @@ body{
 	font-family: 'Open Sans';font-size: 15px;
 	font-weight: 700;
 	margin-left:30px;
+	margin-top:30px;
 	
 }
 
@@ -450,7 +452,8 @@ body{
 	font-size: 24px;
 	font-weight: 600;
 	height:25px;
-	margin-left:10px
+	margin-left:10px;
+	margin-top:10px;
 		
 }
 
@@ -460,6 +463,7 @@ body{
 	font-weight: 700;
 	height:19px;
 	margin-left:30px;
+	margin-top:10px;
 	
 }
 
@@ -469,6 +473,7 @@ body{
 	font-weight: 300;
 	height:19px;
 	margin-left: 10px;
+	margin-top:30px;
 	
 }
 /* Här slutar main */
@@ -759,9 +764,20 @@ body{
 	height:30px;
 	width:40px;
 	position: absolute;
-	margin-top:50px;
-	margin-left:340px;
+	margin-top:-340px;
+	margin-left:150px;
 }
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+  }
 
 .card1__icon{
 	height:186px;
@@ -1107,7 +1123,7 @@ body{
 	flex-direction: column;
 	justify-content:center;
 	align-items: center;
-	margin-bottom: 40px;;
+	margin-bottom:20px;
 
 }
 
@@ -1177,6 +1193,8 @@ body{
 	height:10px;
 	width:74px;
 	margin-left: 10px;
+	margin-top:0px;
+	
 	
 }
 /* Här slutar main */

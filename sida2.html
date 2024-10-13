@@ -20,26 +20,35 @@
 	<header class="header">
 			<img class="card1__img" src="assets/images/handsidan.avif" alt="">
 			<img class="card1__icon" src="assets/icons/Logo.svg" alt="">
-			<img class="card1__icon--burgir" href="" src="assets/icons/burgir.svg" alt="">
+			<a href="index.html">
+				<img class="card1__icon--burgir" src="assets/icons/burgir.svg" alt="Go to Burgir page">
+				<span class="visually-hidden">Go to burgir page</span>
+			</a>
+			
+	
 			<p class="card1__p">Mina sidor</p>
 	</header>
 
 	<article class="article">
 		<section class="card2">
 			<p class="card2__p">Lägg till ny plantering:</p>
-			</section>
-			<section class="card2">
-		<form class="card2__form--text">
-  			<label class="card2__text--text" for="text">Planta:</label>
- 			<input type="text">
-		</form>
 		</section>
+
 		<section class="card2">
-		<form class="card2__form--datum">
- 			<label class="card2__text--text" for="text">Datum:</label>
-			<input type="text"> 
-			
-		</form>
+			<div class="card2__form-container">
+				<form class="card2__form--text">
+  					<label class="card2__text--label"  for="text">Planta:</label>
+ 					<input class="card2__input" type="text" id="plant name" name="text" placeholder="">
+				</form>
+
+		
+		
+				<form class="card2__form--datum">
+ 					<label class="card2__text--label" for="date">Datum:</label>
+					<input class="card2__input" type="text" id="date" name="date" placeholder=""> 
+				</form>
+			</div>
+
 		</section>
 		<section class="card2">
 			<button class="card2__btn">LÄGG TILL</button>

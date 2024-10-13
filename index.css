@@ -1134,8 +1134,15 @@ body{
 	position: absolute;
 	
 }
+.card__icon-2{
+	width:13px;
+	height:16px;
+	background-color: #B93857;
+	margin-left:80px;
+}
 
 .card__btn{
+	display:none;
 	width:13px;
 	height: 16px;
 	background-color: #B93857;

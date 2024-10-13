@@ -83,13 +83,10 @@ body{
 
 }
 .card1__icon--burgir{
-	height:30px;
-	width:40px;
-	position: absolute;
-	margin-bottom:340px;
-	margin-left:330px;
-	/* justera till burgir*/
+	display:none
 }
+	
+
 
 .card1__p{
 	width:192px;
@@ -439,23 +436,7 @@ body{
 
 }
 
-/*.nav__list{
-	width:792px;
-	height:17px;
-	display:flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
 
-}
-
-.nav__item{
-	font-family: 'Maven Pro';
-	font-size: 20px;
-	font-weight: 500;
-	color:#055647;
-
-}*/
 
 /* Slut nav */
 
@@ -486,6 +467,7 @@ body{
 
 }
 .card1__icon--burgir{
+	display:block;
 	height:30px;
 	width:40px;
 	position: absolute;
@@ -502,7 +484,7 @@ body{
 	font-size: 32px;
 	font-weight: 500;
 	color:#ffffff;
-	margin-top:170px;
+	margin-top:110px;
 
 }
 
@@ -516,6 +498,7 @@ body{
 	width:390px;
 	height:232px;
 	display:flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items:center;
 
@@ -526,10 +509,12 @@ body{
 	height:232px;
 	background-color: #ffffff;
 	display:flex;
-	flex-direction:row;
-	flex-wrap: wrap;
-	justify-items: center;
+	flex-direction:column;
+	justify-content: center;
 	align-items: center;
+align-self: center;
+	
+	
 
 }
 
@@ -540,22 +525,21 @@ body{
 	font-size: 24px;
 	font-weight: 400;
 	color: #060606;
-	margin-bottom:110px;
-	margin-left:30px;
+
 	
 }
 
 .card2__form--text{
 	width:357px;
 	height:52px;
-	margin-left:-330px;
+	
 		
 }
 
 .card2__form--datum{
 	width:357px;
 	height:52px;
-	margin-left:40px;
+
 	
 }
 
@@ -565,6 +549,7 @@ body{
 	font:'Open Sans';
 	font-size: 12px;
 	font-weight: 400;
+	
 
 }
 
@@ -585,8 +570,7 @@ input{
 	font-weight: 700;
 	color:#ffffff;
 	border-radius: 9px;
-	margin-left: -560px;
-	margin-top: 150px
+
 
 }
 /* Slut article */
@@ -656,8 +640,8 @@ input{
 
 .card--text{
 	grid-area:c4;
-	height: 111px;
-	width:293px;
+	height: 60px;
+	width:175px;
 	display:grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
@@ -723,7 +707,7 @@ input{
 	
 }*/
 
-.card__p{
+.card__p{ /* Gurka*/
 	font-family:'Lato';
 	font-size: 14px;
 	font-weight: 600;
@@ -732,7 +716,7 @@ input{
 		
 }
 
-.card__p1{
+.card__p1{ /* Datum */
 	font-family:'Open Sans';
 	font-size: 10px;
 	font-weight: 700;
@@ -741,7 +725,7 @@ input{
 	
 }
 
-.card__p2{
+.card__p2{  /* Namn */
 	font-family: 'Lato';
 	font-size: 10px;
 	font-weight: 300;
@@ -750,7 +734,7 @@ input{
 	
 }
 
-.card__p3{
+.card__p3{   /* Dina planterade....*/
 	grid-area:c1;
 	width:355px;
 	height:22px;
@@ -781,7 +765,7 @@ input{
 	background-color: #9E6D52;
 	display:flex;
 	flex-direction: row;
-	justify-content:space-evenly;
+	flex-wrap: wrap;
 	align-items:center;
 	
 }
